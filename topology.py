@@ -172,7 +172,7 @@ def run():
         net.start()
 
         # Add routing table entries for hosts (NOTE: The gateway
-		    # IPs 10.0.X.1 are not assigned to switch interfaces)
+	# IPs 10.0.X.1 are not assigned to switch interfaces)
         h0.cmd( 'route add default gw 10.0.0.1 dev h0-eth0' )
         h1.cmd( 'route add default gw 10.0.1.1 dev h1-eth0' )
         h2.cmd( 'route add default gw 10.0.2.1 dev h2-eth0' )
